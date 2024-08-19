@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Note</title>
+
+    <style>
+      body {
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Verdana', sans-serif;
+      }
+
+      .note {
+        width: 320px;
+        padding: 20px;
+        background: linear-gradient(135deg, hsl(229, 75%, 58%), #d3d3d3);
+        border: 1px solid #cccccc;
+        border-radius: 12px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        transform: rotate(2deg);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+
+      .note:hover {
+        transform: rotate(-2deg);
+      }
+
+      .note-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .note-header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .note-header p {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .note-body {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #444;
+      }
+
+      .note-body ul {
+        list-style: disc;
+        padding-left: 20px;
+        margin: 0;
+      }
+
+      .note-body li {
+        margin-bottom: 10px;
+      }
+
+      .note-footer {
+        margin-top: 20px;
+      }
+
+      .note-footer button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #4caf50, #81c784);
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .note-footer button:hover {
+        background: linear-gradient(135deg, #388e3c, #66bb6a);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="note">
+      <div class="note-header">
+        <h1>#01</h1>
+        <p>Created On: 01/01/2023</p>
+      </div>
+      <div class="note-body">
+        <h2>Important Dates</h2>
+        <ul>
+          <li>January 26 - Republic Day</li>
+          <li>August 15 - Independence Day</li>
+          <li>October 2 - Gandhi Jayanti</li>
+          <li>August 29 - National Sports Day</li>
+        </ul>
+      </div>
+      <div class="note-footer">
+        <button>Mark as Done</button>
+      </div>
+    </section>
+  </body>
+</html>

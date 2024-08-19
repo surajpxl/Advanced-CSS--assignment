@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reveal the Image</title>
+
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Verdana', sans-serif;
+        margin: 0;
+        background-color: #e8e8e8;
+      }
+
+      h1 {
+        font-size: 48px;
+        font-weight: bold;
+        color: #444;
+        text-decoration: underline;
+      }
+
+      img {
+        width: 80%;
+        max-width: 800px;
+        height: auto;
+        filter: blur(6px);
+        border: 4px solid #333;
+        transition: filter 2s ease-in-out;
+      }
+
+      img:hover {
+        filter: blur(0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hover to Unblur the Image</h1>
+    <img
+      src="https://images.pexels.com/photos/207216/pexels-photo-207216.jpeg"
+      alt="Scenic View"
+    />
+  </body>
+</html>
